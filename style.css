@@ -28,3 +28,6 @@ button{
     background-color: aqua;
     border: 2px solid;
 }
+marquee{
+    font-size: 25px;
+}
