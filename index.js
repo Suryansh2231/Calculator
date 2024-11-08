@@ -18,11 +18,6 @@ for (item of buttons) {
                 screen.value = screenValue;
             }
         }
-      
-        // else if (buttonText == 'C') {
-        //     screenValue = string.slice(0,-1);
-        //     screen.value = screenValue;
-        // }
         else if (buttonText == 'AC') {
             screenValue = "";
             screen.value = screenValue;
