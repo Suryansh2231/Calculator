@@ -11,8 +11,26 @@ for (item of buttons) {
             screen.value = screenValue;
         }
         else if (buttonText == 'C') {
+            // Check if there is something to remove
+            if (screenValue.length > 0) {
+                // Remove the last character
+                screenValue = screenValue.slice(0, -1);
+                screen.value = screenValue;
+            }
+        }
+      
+        // else if (buttonText == 'C') {
+        //     screenValue = string.slice(0,-1);
+        //     screen.value = screenValue;
+        // }
+        else if (buttonText == 'AC') {
             screenValue = "";
             screen.value = screenValue;
+        }
+            else if (buttonText == '√') {
+                screenValue = Math.sqrt(eval(screenValue)).toString();
+                screen.value = screenValue;
+    
         }
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
